@@ -1,4 +1,4 @@
-# This an example project of grails json views Edit
+# This an example project of grails json views
 
 
 
