@@ -1,0 +1,7 @@
+import me.w2x.example.jsonviews.Book
+
+model {
+    Book book
+}
+
+json g.render(book)

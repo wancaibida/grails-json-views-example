@@ -1,0 +1,10 @@
+import me.w2x.example.jsonviews.Book
+
+model {
+    Book book
+}
+
+json g.render(book, [deep: false, renderNulls: true]) {
+    authorName book.author?.name
+    publishDate new Date().time
+}

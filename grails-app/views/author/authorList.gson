@@ -1,0 +1,7 @@
+import me.w2x.example.jsonviews.Author
+
+model {
+    Collection<Author> authorList = []
+}
+
+json tmpl.author(authorList)

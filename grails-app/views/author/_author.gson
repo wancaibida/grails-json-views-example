@@ -1,0 +1,10 @@
+import me.w2x.example.jsonviews.Author
+
+model {
+    Author author
+}
+
+json {
+    name author.name
+    books g.render(template: '/book/book', collection: author.books, var: 'book')
+}

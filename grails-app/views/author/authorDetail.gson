@@ -1,0 +1,11 @@
+import groovy.transform.Field
+import me.w2x.example.jsonviews.Author
+
+@Field Author author
+
+json {
+    id author.id
+    name author.name
+    description 'this is detail message'
+    books g.render(template: '/book/book', collection: author.books, var: 'book')
+}
